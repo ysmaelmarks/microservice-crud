@@ -20,19 +20,20 @@ $ docker compose up
 
 ### HTTP Requests
 
-- Get /usuarios
-- Post /usuarios
-- Put /usuarios/:id
-- Delete /usuarios/:id
+- GET /usuarios
+- POST /usuarios
+- PUT /usuarios/:id
+- DELETE /usuarios/:id
 
-#### JSON Model
+### JSON Model
 
 {
-- "id": "example"
-- "nome": "example" (required)
-- "email": "example"
-- "login": "example"
-- "senha": "example"
+\
+ "id": "example"\
+ "nome": "example" (required)\
+ "email": "example"\
+ "login": "example"\
+ "senha": "example"\
 }
 
 
