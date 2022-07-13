@@ -18,24 +18,13 @@ $ npm i
 $ docker compose up
 ```
 
-### HTTP Requests
+### Requests
 
-- GET /usuarios
-- POST /usuarios
-- PUT /usuarios/:id
-- DELETE /usuarios/:id
+You can use Swagger UI to test the requests.
 
-### JSON Model
-
-{
-\
- "id": "example"\
- "nome": "example" (required)\
- "email": "example"\
- "login": "example"\
- "senha": "example"\
-}
-
+```sh
+- http://localhost:3000/docs
+```
 
 #### DEV Note
 That's my first time working with Docker. I wanted to build a API to learn more about Docker and Microservices concepts. 
