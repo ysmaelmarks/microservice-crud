@@ -10,22 +10,28 @@
 
   "scripts": {
 
-    "start": "node server.js",
+    "start": "nodemon server.js",
 
     "test": "echo \"Error: no test specified\" && exit 1"
 
   },
 
   "devDependencies": {
-    "nodemon": "^2.0.19"
-  },
 
+    "nodemon": "^2.0.19"
+
+  },
 
   "dependencies": {
 
     "express": "^4.18.1",
 
-    "mongoose": "^6.4.4"
+    "mongoose": "^6.4.4",
+
+    "swagger-jsdoc": "5.0.1",
+
+    "swagger-ui-express": "^4.5.0"
+
   },
 
   "keywords": [],
