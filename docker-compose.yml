@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  server:
+      container_name: MICROSERVICE
+      build: '.'
+      volumes:
+        - ./:/appcrud
+        - ./node_modules:/appcrud/node_modules
+      environment:
+        NODE_ENV: development
+      depends_on:
+        - db
+      links:
+        - db
+      ports:
+        - '3000:3000'
+      restart: on-failure
+      
+  db:
+    image: 'mongo'
+    container_name: mongoDB
+    ports:
+      - '27017:27017'
+    volumes:
+        - ./data/db:/data/db
+    restart: on-failure
